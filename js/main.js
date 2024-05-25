@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (language === 'en') {
               window.location.href = 'index-en.html';
             } else if (language === 'sk') {
-              window.location.href = 'index.html';
+              window.location.href = 'index-sk.html';
             }  
             else if (language === 'gr') {
               window.location.href = 'index-gr.html';
