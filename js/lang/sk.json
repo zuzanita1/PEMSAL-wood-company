@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "home": "Domov",
+    "about": "O nás",
+    "services": "Produkty a služby",
+    "contact": "Kontakt"
+  },
+  "topbar": {
+    "opening": "Otváracie hodiny",
+    "days_hours": "Pon - Pia, 7:00 - 15:30",
+    "phone": "Telefón",
+    "email": "E-mail"
+  },
+  "index": {
+    "main_heading": "Výrobca stavebného reziva",
+    "button_more": "Zobraziť viac"
+  },
+  "about": {
+    "main_heading": "20 rokov na trhu",
+    "content": "Sme firma sídliaca v oblasti hornej Oravy, ktorá sa špecializuje na výrobu širokej škály drevených produktov, prevažne zo smrekového a jedľového dreva. Zameriavame sa najmä na výrobu hranolov z kvalitného dreva Pelekita/Uso Trieste, paletových prírezov, štiepky, palivového dreva a guľatiny. Okrem výroby poskytujeme aj služby v oblasti prepravy."
+  },
+  "service": {
+    "main_heading": "Produkty a služby",
+    "sub_heading": "Produkty z kvalitného smrekového a jedľového dreva.",
+    "service_1": {
+      "title": "Frézované hranoly/Pelekita/Uso trieste",
+      "text": "Rozmery:\n• 80 x 80 x 4000-6000 mm,\n• 100-180 x 100-180 x 4000-10000 mm"
+    },
+    "service_2": {
+      "title": "Paletové prírezy",
+      "text": "Rozmery:\n• 16-22 x 48-145 x 800-3000 mm"
+    },
+    "service_3": {
+      "title": "Guľatina",
+      "text": "Smrek od 12-60 cm"
+    },
+    "service_4": {
+      "title": "Štiepka",
+      "text": "• štiepka\n• Kôra\n• 3 druhy frakcií"
+    },
+    "service_5": {
+      "title": "Palivové drevo",
+      "text": "• Klátiky\n• Metrovica\n• Nakálané\n• Rozmery: 25-100 cm"
+    },
+    "service_6": {
+      "title": "Palety",
+      "text": "Rozmery:\n• 80-1300 x 2500-3500 mm"
+    },
+    "service_7": {
+      "title": "Doprava",
+      "text": "Ponúkame prepravu guľatiny a dovoz palivového dreva."
+    }
+  },
+  "contact": {
+    "main_heading": "",
+    "sub_heading": "",
+    "address": "Sídlo prevádzky",
+    "phone": "Telefón",
+    "email": "E-mail",
+    "ico": "IČO",
+    "dic": "DIČ",
+    "icdph": "IČ DPH"
+  },
+  "footer": {
+    "main_heading1": "Kontaktné údaje",
+    "main_heading2": "Fakturačné údaje",
+    "ico": "IČO: 47055090",
+    "dic": "DIČ: 2023750223",
+    "icdph": "IČ DPH: SK2023750223"
+  }
+}

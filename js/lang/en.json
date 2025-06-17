@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Products & Services",
+    "contact": "Contact"
+  },
+  "topbar": {
+    "opening": "Opening Hours",
+    "days_hours": "Mon - Fri, 7:00 AM - 3:30 PM",
+    "phone": "Phone",
+    "email": "Email"
+  },
+  "index": {
+    "main_heading": "Manufacturer of Construction Timber",
+    "button_more": "Show More"
+  },
+  "about": {
+    "main_heading": "20 Years on the Market",
+    "content": "We are a company based in the Upper Orava region, specializing in the production of a wide range of wooden products, mainly from spruce and fir wood. We primarily focus on the production of squared timber from high-quality Pelekita/Uso Trieste wood, pallet boards, wood chips, firewood, and logs. In addition to production, we also offer transportation services."
+  },
+  "service": {
+    "main_heading": "Products & Services",
+    "sub_heading": "Products made from high-quality spruce and fir wood.",
+    "service_1": {
+      "title": "Milled Timber / Pelekita / Uso Trieste",
+      "text": "Dimensions:\n• 80 x 80 x 4000-6000 mm,\n• 100-180 x 100-180 x 4000-10000 mm"
+    },
+    "service_2": {
+      "title": "Pallet Boards",
+      "text": "Dimensions:\n• 16-22 x 48-145 x 800-3000 mm"
+    },
+    "service_3": {
+      "title": "Logs",
+      "text": "Spruce from 12-60 cm"
+    },
+    "service_4": {
+      "title": "Wood Chips",
+      "text": "• Wood chips\n• Bark\n• 3 types of fractions"
+    },
+    "service_5": {
+      "title": "Firewood",
+      "text": "• Logs\n• Meter wood\n• Split wood\n• Sizes: 25-100 cm"
+    },
+    "service_6": {
+      "title": "Pallets",
+      "text": "Dimensions:\n• 80-1300 x 2500-3500 mm"
+    },
+    "service_7": {
+      "title": "Transport",
+      "text": "We offer transport of logs and delivery of firewood."
+    }
+  },
+  "contact": {
+    "main_heading": "",
+    "sub_heading": "",
+    "address": "Company Headquarters",
+    "phone": "Phone",
+    "email": "Email",
+    "ico": "Company ID",
+    "dic": "Tax ID",
+    "icdph": "VAT ID"
+  },
+  "footer": {
+    "main_heading1": "Contact Information",
+    "main_heading2": "Billing Information",
+    "ico": "Company ID: 47055090",
+    "dic": "Tax ID: 2023750223",
+    "icdph": "VAT ID: SK2023750223"
+  }
+}
