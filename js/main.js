@@ -136,30 +136,10 @@
 })(jQuery);
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const languageSelector = document.getElementById('language-selector');
-  
-    languageSelector.addEventListener('click', function(event) {
-        const target = event.target.closest('li');
-        if (target) {
-            const language = target.getAttribute('value');
-            if (language === 'en') {
-              window.location.href = 'index-en.html';
-            } else if (language === 'sk') {
-              window.location.href = 'index-sk.html';
-            }  
-            else if (language === 'gr') {
-              window.location.href = 'index-gr.html';
-            }
-      }
-    });
-  });
-
-
 // Language selection
 function setLanguage(lang) {
   localStorage.setItem('language', lang);
-  fetch(`js/lang/${lang}.json`)  // 👈 upravená cesta sem
+  fetch(`js/lang/${lang}.json`) 
     .then(response => response.json())
     .then(translations => {
       document.querySelectorAll('[data-key]').forEach(el => {

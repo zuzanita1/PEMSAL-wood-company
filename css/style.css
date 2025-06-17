@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
-
 /*******************************/
 /********* General CSS *********/
 /*******************************/
@@ -13,32 +11,29 @@ body {
     font-weight: 400;
 }
 
-:root{
-    --Brown: rgb(31, 19, 5);   
-    /* --Kaki: rgb(200, 138, 5);   */
-    /* --Kaki:  rgba(79, 59, 14, 0.672); */
-    --Kaki: rgb(177, 115, 67);
-    --GreenKaki:  rgba(79, 59, 14, 0.672);
-        /* background: rgb(128, 88, 1); */
-    /* background: rgba(79, 59, 14, 0.672);  */
-    --LightBrown: rgba(182, 125, 2, 0.861); 
+:root {
+    --Brown: rgb(31, 19, 5); 
+    --Kaki: #a37b22;
+    --GreenKaki: rgba(79, 59, 14, 0.672);
+    --LightBrown:#DAB896;
+
 }
 
 h1,
 h2,
-h3, 
+h3,
 h4,
-h5, 
+h5,
 h6 {
     color: var(--Brown);
 }
 
-h1{
+h1 {
     font-family: "Audiowide", sans-serif;
     text-transform: uppercase;
 }
 
-.container-fluid .row{
+.container-fluid .row {
     padding-top: 8px;
 }
 
@@ -173,6 +168,18 @@ a:focus {
     }
 }
 
+@media (max-width: 1300px) {
+
+    .top-bar .top-bar-text h3 {
+        margin: 0 0 3px 0;
+        font-size: 14px;
+    }
+
+    .top-bar .top-bar-text p {
+        font-size: 12px;
+    }
+}
+
 
 /**********************************/
 /*********** Nav Bar CSS **********/
@@ -211,6 +218,7 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: var(--Kaki);
+    font-weight: 700;
     transition: none;
 }
 
@@ -233,7 +241,7 @@ a:focus {
     border-color: var(--Brown);
 }
 
-.language-selector{
+.language-selector {
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -242,34 +250,38 @@ a:focus {
     padding: 0 10px;
 }
 
-.language-selector img{
+.language-selector img {
     width: 24px;
     height: 24px;
     cursor: pointer;
 }
 
-.language-selector img:hover{
+.language-selector img:hover {
     width: 26px;
     height: 26px;
+}
+
+.nav-sticky .navbar-toggler {
+    margin-right: 15px !important;
 }
 
 @media (min-width: 992px) {
     .nav-bar {
         padding: 0 75px;
     }
-    
+
     .nav-bar.nav-sticky {
         padding: 0;
     }
-    
+
     .nav-bar .navbar {
         padding: 20px;
     }
-    
+
     .nav-bar .navbar-brand {
         display: none;
     }
-    
+
     .nav-bar a.nav-link {
         padding: 8px 15px;
         font-size: 15px;
@@ -278,33 +290,33 @@ a:focus {
 }
 
 @media (max-width: 991.98px) {
-    .nav-bar .navbar {
+     .nav-bar .navbar {
         padding: 15px;
-    }
-    
+    } 
+
     .nav-bar a.nav-link {
         padding: 5px;
     }
-    
+
     .nav-bar .dropdown-menu {
         box-shadow: none;
     }
-    
+
     .nav-bar .btn {
         display: none;
     }
 
-    .language-selector{
+    .language-selector {
         padding-top: 10px;
     }
 
-    .language-selector img{
+    .language-selector img {
         width: 20px;
         height: 20px;
         cursor: pointer;
     }
-    
-    .language-selector img:hover{
+
+    .language-selector img:hover {
         width: 23px;
         height: 23px;
     }
@@ -389,7 +401,7 @@ a:focus {
 }
 
 .carousel .carousel-caption .btn:hover {
-    color:  #ffffff;
+    color: var(--Kaki);
     background: var(--Brown);
     border-color: var(--Brown);
 }
@@ -399,11 +411,11 @@ a:focus {
         font-size: 40px;
         font-weight: 700;
     }
-    
+
     .carousel .carousel-caption p {
         font-size: 20px;
     }
-    
+
     .carousel .carousel-caption .btn {
         padding: 12px 30px;
         font-size: 18px;
@@ -417,11 +429,11 @@ a:focus {
         font-size: 30px;
         font-weight: 500;
     }
-    
+
     .carousel .carousel-caption p {
         font-size: 16px;
     }
-    
+
     .carousel .carousel-caption .btn {
         padding: 10px 25px;
         font-size: 16px;
@@ -477,7 +489,8 @@ a:focus {
 }
 
 .page-header a:hover {
-    font-size: 25px;
+    background-color: var(--Brown);
+    color: var(--Kaki);
 }
 
 .page-header a::after {
@@ -488,7 +501,7 @@ a:focus {
     top: -2px;
     right: -7px;
     text-align: center;
-    color:  white;
+    color: white;
 }
 
 .page-header a:last-child::after {
@@ -499,11 +512,11 @@ a:focus {
     .page-header {
         padding: 60px 0;
     }
-    
+
     .page-header h2 {
         font-size: 45px;
     }
-    
+
     .page-header a {
         font-size: 20px;
     }
@@ -513,11 +526,11 @@ a:focus {
     .page-header {
         padding: 45px 0;
     }
-    
+
     .page-header h2 {
         font-size: 35px;
     }
-    
+
     .page-header a {
         font-size: 18px;
     }
@@ -609,15 +622,15 @@ a:focus {
 .service .service-img {
     position: relative;
     overflow: hidden;
-    width: 100%;   
-    max-height: 200px;
+    width: 100%;
+    max-height: 170px;
 }
 
 .service .service-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-   
+
 }
 
 .service .service-overlay {
@@ -631,7 +644,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background:  rgba(31, 19, 5, 0.795);
+    background: rgba(31, 19, 5, 0.795);
     transition: .5s;
     opacity: 0;
 }
@@ -798,11 +811,11 @@ a:focus {
 }
 
 .sidebar .category-widget ul li {
-    margin: 0 0 12px 22px; 
+    margin: 0 0 12px 22px;
 }
 
 .sidebar .category-widget ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .sidebar .category-widget ul li a {
@@ -821,7 +834,6 @@ a:focus {
 
 .sidebar .category-widget ul li span {
     display: inline-block;
-    /* float: right; */
 }
 
 .sidebar .sidebar-widget .tag-widget {
@@ -865,8 +877,8 @@ a:focus {
 /*******************************/
 .contact {
     position: relative;
-    width: 90%;
-    margin: 0 auto;  
+    width: 80%;
+    margin: 0 auto;
 }
 
 .contact .col-md-6:first-child {
@@ -876,7 +888,7 @@ a:focus {
 }
 
 .contact .col-md-6:last-child {
-    background: var(--Brown);
+    background: var(--GreenKaki);
     padding: 0;
 }
 
@@ -927,28 +939,28 @@ a:focus {
     margin-bottom: 0;
 }
 
+
 .fakturacne-udaje {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px;                             
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px;
     width: 100%;
-    padding-left: 0px !important;
-} 
+    padding-left: 0 !important;
+}
 
-.faktura-item { 
+.faktura-item {
     padding: 10px;
     box-sizing: border-box;
     text-align: start;
     border: 1px solid var(--Brown);
-} 
-
+}
 
 .faktura-item p {
     margin: 0;
     font-size: 14px;
 }
 
-.row .map{
+.row .map {
     width: 100%;
     height: 100%;
 }
@@ -957,7 +969,6 @@ a:focus {
     width: 100%;
     height: 100%;
 }
-
 
 .contact .help-block ul {
     margin: 0;
@@ -977,7 +988,7 @@ a:focus {
     color: #ffffff;
 }
 
-.footer .footer-contact{
+.footer .footer-contact {
 
     width: 400px;
     position: relative;
@@ -1035,6 +1046,7 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+
     .footer .copyright p,
     .footer .copyright .col-md-6:last-child p {
         margin: 5px 0;
