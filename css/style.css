@@ -448,16 +448,6 @@ a:focus {
     background-size: cover;
 }
 
-.page-header::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(#120c06e0, rgba(51, 39, 27, 0.778));
-}
-
 .page-header h2 {
     position: relative;
     color: white;
@@ -476,18 +466,18 @@ a:focus {
     height: 2px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: var(--Brown);
+    background: white;
 }
 
 .page-header a {
     position: relative;
     padding: 0 12px;
     font-size: 22px;
-    color: var(--Brown);
+    color: white;
 }
 
 .page-header a:hover {
-    color: #ffffff;
+    font-size: 25px;
 }
 
 .page-header a::after {
@@ -498,7 +488,7 @@ a:focus {
     top: -2px;
     right: -7px;
     text-align: center;
-    color: #121518;
+    color:  white;
 }
 
 .page-header a:last-child::after {
@@ -619,13 +609,19 @@ a:focus {
 .service .service-img {
     position: relative;
     overflow: hidden;
+    width: 100%;   
+    max-height: 200px;
 }
 
 .service .service-img img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+   
 }
 
 .service .service-overlay {
+    white-space: pre-line;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -635,7 +631,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(3, 15, 39, .7);
+    background:  rgba(31, 19, 5, 0.795);
     transition: .5s;
     opacity: 0;
 }
@@ -683,7 +679,7 @@ a:focus {
     line-height: 60px;
     font-weight: 100;
     color: var(--Brown);
-    background: var(--Kaki);
+    background: var(--Brown);
     border-radius: 0;
     transition: .3s;
 }
@@ -869,8 +865,8 @@ a:focus {
 /*******************************/
 .contact {
     position: relative;
-    width: 100%;
-    padding: 45px 0;
+    width: 90%;
+    margin: 0 auto;  
 }
 
 .contact .col-md-6:first-child {
@@ -880,20 +876,24 @@ a:focus {
 }
 
 .contact .col-md-6:last-child {
-    background: var(--GreenKaki);
+    background: var(--Brown);
     padding: 0;
 }
 
 .contact .contact-info {
     position: relative;
     width: 100%;
-    padding: 0 15px;
+    padding: 0px 15px 20px 15px;
+}
+
+.contact .contact-info p {
+    color: var(--Brown);
 }
 
 .contact .contact-item {
     position: relative;
-    margin-bottom: 30px;
-    padding: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -915,7 +915,6 @@ a:focus {
 .contact .contact-text h2 {
     color: var(--Brown);
     font-size: 20px;
-    font-weight: 700;
 }
 
 .contact .contact-text p {
@@ -928,72 +927,37 @@ a:focus {
     margin-bottom: 0;
 }
 
-.contact .map{
+.fakturacne-udaje {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;                             
+    width: 100%;
+    padding-left: 0px !important;
+} 
+
+.faktura-item { 
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: start;
+    border: 1px solid var(--Brown);
+} 
+
+
+.faktura-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.row .map{
     width: 100%;
     height: 100%;
 }
 
-.contact .map iframe {
+.row .map iframe {
     width: 100%;
     height: 100%;
 }
 
-/* .contact .contact-form {
-    position: relative;
-    padding: 0 15px;
-}
-
-.contact .contact-form input {
-    color: #ffffff;
-    height: 40px;
-    border-radius: 0;
-    border-width: 1px;
-    border-color: rgba(256, 256, 256, .4);
-    background: transparent;
-}
-
-.contact .contact-form textarea {
-    color: #ffffff;
-    height: 185px;
-    border-radius: 0;
-    border-width: 1px;
-    border-color: rgba(256, 256, 256, .4);
-    background: transparent;
-}
-
-.contact .contact-form input:focus,
-.contact .contact-form textarea {
-    box-shadow: none;
-}
-
-.contact .contact-form .form-control::placeholder {
-  color: #ffffff;
-  opacity: 1;
-}
-
-.contact .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.contact .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.contact .contact-form .btn {
-    padding: 16px 30px;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--Kaki);
-    background: var(--Brown);
-    border: none;
-    border-radius: 0;
-    transition: .3s;
-}
-
-.contact .contact-form .btn:hover {
-    color: var(--Brown);
-    background: #ffffff;
-} */
 
 .contact .help-block ul {
     margin: 0;
@@ -1064,6 +1028,10 @@ a:focus {
 
 .footer .copyright p a:hover {
     color: #ffffff;
+}
+
+.footer .footer-contact i {
+    color: var(--Kaki);
 }
 
 @media (max-width: 768px) {

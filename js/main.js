@@ -155,3 +155,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+
+// Language selection
+function setLanguage(lang) {
+  localStorage.setItem('language', lang);
+  fetch(`js/lang/${lang}.json`)  // 👈 upravená cesta sem
+    .then(response => response.json())
+    .then(translations => {
+      document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        const text = getNestedTranslation(translations, key);
+        if (text) el.textContent = text;
+      });
+    })
+    .catch(err => console.error("Chyba pri načítaní prekladov:", err));
+}
+
+function getNestedTranslation(obj, key) {
+  return key.split('.').reduce((o, i) => (o ? o[i] : null), obj);
+}
+
+window.onload = () => {
+  const lang = localStorage.getItem('language') || 'sk';
+  setLanguage(lang);
+};
