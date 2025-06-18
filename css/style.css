@@ -12,10 +12,10 @@ body {
 }
 
 :root {
-    --Brown: rgb(31, 19, 5); 
+    --Brown: rgb(31, 19, 5);
     --Kaki: #a37b22;
     --GreenKaki: rgba(79, 59, 14, 0.672);
-    --LightBrown:#DAB896;
+    --LightBrown: #DAB896;
 
 }
 
@@ -290,9 +290,9 @@ a:focus {
 }
 
 @media (max-width: 991.98px) {
-     .nav-bar .navbar {
+    .nav-bar .navbar {
         padding: 15px;
-    } 
+    }
 
     .nav-bar a.nav-link {
         padding: 5px;
@@ -520,6 +520,11 @@ a:focus {
     .page-header a {
         font-size: 20px;
     }
+
+    .page-header a:hover {
+        background-color: var(--Brown);
+        color: var(--Kaki);
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -534,6 +539,12 @@ a:focus {
     .page-header a {
         font-size: 18px;
     }
+
+    .page-header a:hover {
+        background-color: var(--Brown);
+        color: var(--Kaki);
+    }
+
 }
 
 
@@ -701,6 +712,11 @@ a:focus {
     color: #ffffff;
 }
 
+.service .brown-line {
+    border: none;
+    border-top: 3px solid var(--Kaki); /* napr. SaddleBrown, nastav si svoju hnedú */
+    margin-bottom: 20px; /* medzera pod čiarou */
+}
 
 /**********************************/
 /*********** Sidebar CSS **********/
@@ -942,7 +958,7 @@ a:focus {
 
 .fakturacne-udaje {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     width: 100%;
     padding-left: 0 !important;
